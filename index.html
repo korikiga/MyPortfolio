@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ligaya Landa</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <meta name="msapplication-TileColor" content="ffffff">
     <meta name="theme-color" content="ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <!-- TOP BAR START -->
-    <div>
-        <img src="img/logos/logo.svg" alt="Logo">
+    <div class="top-bar container">
+        <img id="logo" src="img/logos/logo.svg" alt="Logo">
         <nav>
-            <ul>
+            <ul class="navlinks">
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -29,21 +35,25 @@
     
     
     <!-- MAIN START -->
+
     <main>
-        <div>
-            <h1>
-                Hi, I'm Gaya - a UI/UX Designer currently based in southern Norway. 
-                I enjoy creating simple and usable user-interface designs.
-            </h1>
-            <h2>
-                Featured work
-            </h2>
-            <!-- CARD 1 -->
-            <div>
-                <picture>
-                    <source srcset="img/secretgarden/sg_cover@1.jpg" media="(max-width:767px)">
-                    <img src="img/secretgarden/sg_cover@2.jpg" alt="Secret Garden">
-                </picture>
+        <div class="home container ">
+            <div id="hero">
+                <h1>
+                    Hi, My name is Gaya. I'm a UI/UX Designer currently based in southern Norway. 
+                    I enjoy creating simple and usable user-interface designs.
+                </h1>
+            </div>
+                <h2>
+                    Featured work
+                </h2>
+                
+                <!-- CARD 1 START-->
+                <div>
+                    <picture>
+                        <source srcset="img/secretgarden/sg_cover@1.jpg" media="(max-width:767px)">
+                        <img src="img/secretgarden/sg_cover@2.jpg" alt="Secret Garden">
+                    </picture>
                     <h3>Secret Garden</h3>
                     <div>
                         UI Design
@@ -51,7 +61,7 @@
                     <p>
                         An online store that lets users buy indoor plants
                     </p>
-                    <a href="secret.html">
+                    <a href="secret.html" class="button">
                         See case study
                     </a>
             </div>
@@ -70,7 +80,7 @@
                 <p>
                     A native iOS and Android medicine reminder app
                 </p>
-                <a href="secret.html">
+                <a href="secret.html" class="button">
                     See case study
                 </a>
             </div>
@@ -92,7 +102,7 @@
                 <p>
                     A responsive web application for finding quick and easy recipes
                 </p>
-                <a href="">
+                <a href="" class="button">
                     See case study
                 </a>
             </div>
@@ -104,11 +114,13 @@
 
 
     <!-- FOOTER START --> 
-    <footer id="contact">
+    <footer class="container" id="contact">
         <h2>
             Say hello
         </h2>
-        <span>You can contact me anytime at this <a href="mailto:gaya@cove.no">email</a></span>
+        <span>
+            You can contact me anytime at this <a href="mailto:gaya@cove.no" class="link">email</a>
+        </span>
         <div>
             <ul>
                 <li>
