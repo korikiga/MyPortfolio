@@ -8,24 +8,38 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1,6;
+    line-height: 1.6;
     color: #18191A;
 }
+
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.25rem;
     font-weight: 600;
 }
+
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
 }
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p {
+    color: #646466;
+}
+
 img {
     width: 100%;
+    vertical-align: top;
 }
 
 a {
     color: #18191A;
     text-decoration: none;
 }
+
 a:hover {
     color: #a7a7a7;
 }
@@ -34,21 +48,85 @@ li {
     list-style: none;
 }
 
-#logo {
-    width: 2rem;
+footer {
+    background-color: #18191A;
+    color: #fff;
 }
+
+svg {
+    fill:#fff;
+} 
+
+.flex {
+    display: flex;
+}
+
+#logo {
+    width: 1rem;
+}
+
 #hero {
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     margin: auto;
     align-items: center;
 }
+
+.home {
+    display: block;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: #18191A;
+    margin: 4px;
+}
+
+.project-container {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    box-shadow: 0px 4px 20px 4px #f1f1f1;
+
+}
+
+.project-info {
+    display: block;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+
+.skills > div ~ div {
+    margin-left: 1rem;
+}
+.skills > div {
+    color: rgb(120, 120, 120);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
 #contact .link {
     text-decoration: underline;
+    color: #fff;
 }
+
+.contact-p {
+    color: #fff;
+}
+
 .navlinks {
     display: flex;
+    font-weight: 500;
 }
+
 .navlinks li ~ li {
     margin-left: 1rem;
 }
@@ -58,6 +136,7 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+
 .button {
     display: inline-block;
     background-color: #18191A;
@@ -67,13 +146,51 @@ li {
     border-radius: 4px;
     transition: 0.2s;   
 }
+
 .button:hover {
     background-color:#353535;
     color: #fff;
 }
+
+/* Layout styling */
 .container {
     margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     max-width: 58rem;
+}
+
+.footer-content {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer-content p,
+.footer-content h2 {
+    margin-bottom: 1rem;
+}
+
+.social-links li ~ li {
+    margin-left: 1rem;
+}
+
+.padme {
+    padding: 1.25rem;
+}
+
+.set {
+    color:#646466;
+    margin-bottom: 0.5rem;
+}
+
+.spacing {
+    margin-bottom: 2rem;
+}
+
+.para{
+    color: #18191A;
+}
+
+.prof-img {
+    margin-top: 2rem;
 }
