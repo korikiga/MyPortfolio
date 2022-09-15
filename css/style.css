@@ -123,7 +123,6 @@ svg {
     opacity: 0.4;
 }
 
-
 .mb-xs {
     margin-bottom: 0.5rem;
 }
@@ -138,6 +137,14 @@ svg {
 
 .mb-lg {
     margin-bottom: 2rem;
+}
+
+.mb-xl {
+    margin-bottom: 3.5rem;
+}
+
+.mb-2xl {
+    margin-bottom: 5rem;
 }
 
 .ml {
@@ -211,9 +218,10 @@ svg {
     width: 100vw;
 }
 
-.container-green {
-    background-color:#f2faf6;
-    padding: 1.5rem;
+.bg-green {
+    background-color:#c6d4c0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .footer-content {
@@ -242,9 +250,6 @@ svg {
     margin-bottom: 0.5rem;
 }
 
-.st {
-    margin-top: 3rem;
-}
 
 .text-black {
     color: #18181b;
@@ -288,14 +293,14 @@ svg {
     padding-bottom: 2rem;
 }
 
-.overview {
-    padding: 2rem;
-    box-shadow: 0px 4px 20px 4px #a7a7a7;
-}
-
 .context-title {
     font-size: 1.5rem;
     font-weight: 600;
+
+}
+.overview {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
 }
 
@@ -324,23 +329,96 @@ svg {
     padding-left: 1rem;
 }
 
+/*Svg Animations start*/
+
+@keyframes cloud-move {
+    from {transform: translate(0,0);}
+    to {transform: translate(200px,0);}
+}
+@keyframes cloud-move-2 {
+    from {transform: translate(-20px,0);}
+    to {transform: translate(20px,0);}
+}
+@keyframes cloud-move-3 {
+    from {transform: translate(200px,0);}
+    to {transform: translate(0,0);}
+}
+
+@keyframes leaves-shake {
+    from {transform: rotate(-5deg);}
+    to {transform: rotate(5deg);}
+}
+
+#leaf1,
+#leaf2 {
+    transform-origin: 50px 600px;
+}
+#leaf1 {
+    animation: 1.5s leaves-shake infinite alternate linear;
+}
+#leaf2 {
+    animation: 1s leaves-shake infinite alternate linear;
+}
+
+
+#leaf3,
+#leaf4 {
+    transform-origin: 250px 650px;
+}
+#leaf3 {
+    animation: 1.5s leaves-shake infinite alternate linear;
+}
+#leaf4 {
+    animation: 1s leaves-shake infinite alternate linear;
+}
+
+#leaf5,
+#leaf6 {
+    transform-origin: 960px 650px;
+}
+#leaf5 {
+    animation: 1.5s leaves-shake infinite alternate linear;
+}
+#leaf6 {
+    animation: 1s leaves-shake infinite alternate linear;
+}
+
+#cloud-1 {
+    animation: 30s cloud-move infinite alternate linear;
+}
+#cloud-2 {
+    animation: 10s cloud-move-2 infinite alternate linear;
+}
+#cloud-3 {
+    animation: 40s cloud-move-3 infinite alternate linear;
+}
+.mountains {
+    width: 100%;
+    object-fit: cover;
+}
+/*Svg Animations end*/
+
+
 @media only screen and (min-width: 640px) {
     .h1,
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .h2,
     h2 {
         font-size: 2.25rem;
-        font-weight: 700;
+        font-weight: 600;
     }
     .h3,
     h3 {
-        font-size: 2.125rem;
-        font-weight: 700;
+        font-size: 1.875rem;
+        font-weight: 600;
+    }
+    #hero {
+
     }
     .mw {
-        max-width: 62%;
+        max-width: 62vw;
     }
     .md-mw-0 {
         max-width: none;
@@ -351,6 +429,9 @@ svg {
         margin: auto;
         align-items: center;
     }
+    .md-mb-xs {
+        margin-bottom: 0.5rem;
+    }
     .md-mb-xl {
         margin-bottom: 3.5rem;
     }
@@ -359,6 +440,9 @@ svg {
     }
     .md-center {
         align-items: center;
+    }
+    .md-w-33 {
+        width: 33.333%;
     }
     .md-w-40 {
         width: 40%;
@@ -369,19 +453,26 @@ svg {
     .md-w-50 {
         width: 50%;
     }
-    .md-ml {
-        margin-left: 2rem;
-    }
     .md-padme {
-        padding: 2.25rem;
+        padding: 2.5rem;
+    }
+    .text-center {
+        text-align: center;
     }
     .new-section {
-        padding: 4rem;
+        padding: 3rem;
         color:#193A2F;
     }
-    .container-green {
+    .overview {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bg-green {
         background-color:#f2faf6;
-        padding: 3.5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     .project-container:hover {
         box-shadow: 0px 8px 20px 4px #cdcdcd;
@@ -395,8 +486,7 @@ svg {
         height: 100%;
         object-fit: cover;
     }
-    .about {
-    }
+
     .about-content {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -411,15 +501,37 @@ svg {
     .md-mb-0 {
         margin-bottom: 0;
     }
+    .md-mr-xs {
+        margin-right: 0.5rem;
+    }
+    .md-ml-xs {
+        margin-left: 0.5rem;
+    }
+    .md-mr-sm {
+        margin-right: 1rem;
+    }
+    .md-ml-sm {
+        margin-left: 1rem;
+    }
+    .md-ml {
+        margin-left: 2rem;
+    }
+    .md-mx-xs {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .-mx {
+        margin-left: -0.3rem;
+        margin-right: -0.3rem;
+    }
     .case-study .context {
         width: 10rem;
     }
-/* Layout styling */
+    .container {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
 
-.container {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-}
 
 .wide-img img {
     margin-left: -3.5rem;
@@ -430,10 +542,81 @@ svg {
 }
 
 @media only screen and (min-width: 1024px) {
+    .h1,
+    h1 {
+        font-size: 3rem;
+    }
+    .h2,
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+    .h3,
+    h3 {
+        font-size: 2.125rem;
+        font-weight: 600;
+    }
+    #hero {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        max-width: 50rem;
+        margin: auto 0;
+        align-items: center;
+    }
+    .lg-flex {
+        display: flex;
+    }
+    .lg-w-33 {
+        width: 33.333%;
+    }
+    .lg-mr-xs {
+        margin-right: 0.5rem;
+    }
+    .lg-ml-xs {
+        margin-left: 0.5rem;
+    }
+    .lg-mx-xs {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .lg-mb-0 {
+        margin-bottom: 0;
+    }
+    .lg-mw {
+        width: 42vw;
+    }
+    .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
     .wide-img img {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .overview {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        max-width: 56rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .app-cover-img {
+        width: 100%;
+        height: 42rem;
+        object-fit: contain;
+        background: linear-gradient(#DBE5D7, #C1D0BB)
+    }
+    .bg-green {
+        width: 100%;
+        background-color:#f2faf6;
+        padding: 6rem;
+    }
+    .md-padme {
+        padding: 6rem;
     }
 
 }
