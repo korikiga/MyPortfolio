@@ -181,11 +181,11 @@ svg {
 }
 
 .navlinks li ~ li {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .top-bar {
-    min-height: 10vh;
+    min-height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,9 +219,17 @@ svg {
 }
 
 .bg-green {
-    background-color:#c6d4c0;
+    background-color:#f2faf6;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.user-story {
+    color: #093e23;
+}
+
+.functionality {
+    color: #193A2F;
 }
 
 .footer-content {
@@ -238,7 +246,7 @@ svg {
     width: 48px;
 }
 .social-links li ~ li {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 .padme {
@@ -414,9 +422,6 @@ svg {
         font-size: 1.875rem;
         font-weight: 600;
     }
-    #hero {
-
-    }
     .mw {
         max-width: 62vw;
     }
@@ -434,6 +439,38 @@ svg {
     }
     .md-mb-xl {
         margin-bottom: 3.5rem;
+    }
+    .md-order-1 {
+        order: 1;
+    }
+    .md-order-2 {
+        order: 2;
+    }
+    .md-mb-0 {
+        margin-bottom: 0;
+    }
+    .md-mr-xs {
+        margin-right: 0.5rem;
+    }
+    .md-ml-xs {
+        margin-left: 0.5rem;
+    }
+    .md-mr-sm {
+        margin-right: 1rem;
+    }
+    .md-ml-sm {
+        margin-left: 1rem;
+    }
+    .md-ml {
+        margin-left: 2rem;
+    }
+    .md-mx-xs {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .-mx {
+        margin-left: -0.3rem;
+        margin-right: -0.3rem;
     }
     .md-flex {
         display: flex;
@@ -479,6 +516,11 @@ svg {
         transform: translate(0, -5px);
         transition: all 0.4s ease;
     }
+    .stories {
+        background-color: #f2faf6;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     .prof-img {
         margin-top: 0;
     }
@@ -490,39 +532,6 @@ svg {
     .about-content {
         padding-left: 4rem;
         padding-right: 4rem;
-    }
-   
-    .md-order-1 {
-        order: 1;
-    }
-    .md-order-2 {
-        order: 2;
-    }
-    .md-mb-0 {
-        margin-bottom: 0;
-    }
-    .md-mr-xs {
-        margin-right: 0.5rem;
-    }
-    .md-ml-xs {
-        margin-left: 0.5rem;
-    }
-    .md-mr-sm {
-        margin-right: 1rem;
-    }
-    .md-ml-sm {
-        margin-left: 1rem;
-    }
-    .md-ml {
-        margin-left: 2rem;
-    }
-    .md-mx-xs {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
-    .-mx {
-        margin-left: -0.3rem;
-        margin-right: -0.3rem;
     }
     .case-study .context {
         width: 10rem;
@@ -556,6 +565,12 @@ svg {
         font-size: 2.125rem;
         font-weight: 600;
     }
+    .top-bar {
+        min-height: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     #hero {
         padding-top: 12rem;
         padding-bottom: 12rem;
@@ -572,8 +587,20 @@ svg {
     .lg-mr-xs {
         margin-right: 0.5rem;
     }
+    .lg-mr-sm {
+        margin-right: 1rem;
+    }
+    .lg-mr-md {
+        margin-right: 2rem;
+    }
     .lg-ml-xs {
         margin-left: 0.5rem;
+    }
+    .lg-ml-sm {
+        margin-left: 1rem;
+    }
+    .lg-ml-md {
+        margin-left: 2rem;
     }
     .lg-mx-xs {
         margin-left: 0.5rem;
@@ -582,8 +609,12 @@ svg {
     .lg-mb-0 {
         margin-bottom: 0;
     }
+    .lg-mb-sm {
+        margin-bottom: 0.75rem;
+    }
+
     .lg-mw {
-        width: 42vw;
+        max-width: 45rem;
     }
     .container {
         padding-left: 4rem;
@@ -613,10 +644,14 @@ svg {
     .bg-green {
         width: 100%;
         background-color:#f2faf6;
-        padding: 6rem;
     }
     .md-padme {
         padding: 6rem;
     }
+   .parent {
+    gap: 1.5rem;
+   }
+   
+
 
 }
