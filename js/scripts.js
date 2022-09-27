@@ -1,1 +1,8 @@
-console.log("Hello there! Welcome to my portfolio!");
+$('.hamburger').on(
+    'click',
+    function () {
+      $('body').toggleClass('active-menu')
+    }
+  );
+
+
