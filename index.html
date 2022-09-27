@@ -21,21 +21,22 @@
 <body>
     <!-- TOP BAR START -->
     <div class="top-bar container">
-        <img id="logo" src="img/logos/logo.svg" alt="Logo">
-        <nav class="desktop menu">
+        <a href="index.html">
+            <img id="logo" src="img/logos/logo.svg" alt="Logo">
+        </a>
+        <nav class="nav-menu">
             <ul class="navlinks">
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <nav class="mobile-menu">
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+    
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </div>
     <!-- TOP BAR END -->
     
@@ -455,7 +456,7 @@
     <footer>
         <div class="container" id="contact">
             <div class="footer-content">
-                <h2>
+                <h2 class="mb-xs">
                     Say hello
                 </h2>
                 <p class="contact-p">
@@ -484,6 +485,9 @@
             </div>
         </footer>
         <!-- FOOTER END --> 
+        <script 
+            src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
         <script src="js/scripts.js"></script>
     </body>
     </html>
