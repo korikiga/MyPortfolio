@@ -75,6 +75,8 @@ svg {
 
 #logo {
     width: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 #hero {
@@ -88,17 +90,76 @@ svg {
     display: block;
 }
 
-.mobile-menu {
-    display: none;
+.nav-menu {
+    background-color: #fff;
+    position: fixed;
+    transition: opacity 0.2s;
+    top: -100vh;
+    right: -100vw;
+    bottom: 100vh;
+    left: 100vw;
+    opacity: 0;
 }
 
-.burger div {
-    width: 20px;
-    height: 3px;
+.nav-menu a {
+    color: #18181b;
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+}
+.hamburger {
+    position: relative;
+    z-index: 10;
+}
+.hamburger div {
+    width: 1.5rem;
+    height: 0.25rem;
     background-color: #18181b;
-    margin: 4px;
+    margin: 0.25rem;
+    transition: all 0.2s ease-in-out;
+
 }
 
+
+.active-menu {
+    position: fixed;
+}
+.active-menu .nav-menu {
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+.active-menu .nav-menu .navlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+}
+.active-menu .hamburger{
+    display: block;
+}
+
+.active-menu .hamburger div {
+    background-color: #18181b;
+}
+
+.active-menu .hamburger .line2:nth-child(2){
+    opacity: 0;
+}
+
+.active-menu .hamburger .line1:nth-child(1){
+    transform: translate(0, 0.5rem) rotate(45deg) scale(1.20,1);
+}
+
+.active-menu .hamburger .line3:nth-child(3){
+    transform: translate(0, -0.5rem) rotate(-45deg) scale(1.20, 1);
+}
+    
 .project-container {
     margin-top: 1rem;
     margin-bottom: 4rem;
@@ -175,14 +236,6 @@ svg {
     color: #fff;
 }
 
-.navlinks {
-    display: flex;
-    font-weight: 500;
-}
-
-.navlinks li ~ li {
-    margin-left: 1.5rem;
-}
 
 .top-bar {
     min-height: 6rem;
@@ -195,7 +248,7 @@ svg {
     display: inline-block;
     color: #18181b;
     font-weight: 400;
-    transition: 0.2s; 
+    transition: 0.2s ease; 
     font-weight: 600;
     font-size: 14px;
 }
@@ -252,12 +305,6 @@ svg {
 .padme {
     padding: 1.25rem;
 }
-
-.set {
-    color:#646466;
-    margin-bottom: 0.5rem;
-}
-
 
 .text-black {
     color: #18181b;
@@ -496,6 +543,15 @@ svg {
     .text-center {
         text-align: center;
     }
+
+.navlinks {
+    display: flex;
+    font-weight: 500;
+}
+
+.navlinks li ~ li {
+    margin-left: 1.5rem;
+}
     .new-section {
         padding: 3rem;
         color:#193A2F;
@@ -523,16 +579,13 @@ svg {
     }
     .prof-img {
         margin-top: 0;
+        height: 100%;
     }
     .prof-img img {
         height: 100%;
         object-fit: cover;
     }
 
-    .about-content {
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
     .case-study .context {
         width: 10rem;
     }
@@ -540,14 +593,15 @@ svg {
         padding-left: 3.5rem;
         padding-right: 3.5rem;
     }
-
+    .parent {
+        gap: 1.5rem;
+    }
+}
 
 .wide-img img {
     margin-left: -3.5rem;
     margin-right: -3.5rem;
     width: 100vw;
-}
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -612,7 +666,15 @@ svg {
     .lg-mb-sm {
         margin-bottom: 0.75rem;
     }
-
+    .lg-order-1 {
+        order: 1;
+    }
+    .lg-order-2 {
+        order: 2;
+    }
+    .lg-w-50{
+        width: 50%;
+    }
     .lg-mw {
         max-width: 45rem;
     }
@@ -649,7 +711,7 @@ svg {
         padding: 6rem;
     }
    .parent {
-    gap: 1.5rem;
+    gap: 3rem;
    }
    
 
