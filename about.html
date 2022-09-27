@@ -20,7 +20,9 @@
 <body>
     <!-- TOP BAR START -->
     <div class="top-bar container">
-        <img id="logo" src="img/logos/logo.svg" alt="Logo">
+        <a href="index.html">
+            <img id="logo" src="img/logos/logo.svg" alt="Logo">
+        </a>
         <nav>
             <ul class="navlinks">
                 <li><a href="index.html">Work</a></li>
@@ -32,74 +34,72 @@
     <!-- TOP BAR END-->
     
     <!-- ABOUT ME START -->
-    <div class="container mb-lg">
-        <div class="about">
-            <div class="prof-img mb-lg">
-                <picture>
-                    <source srcset="img/prof@1.jpg" media="(max-width:767px)">
-                    <img src="img/prof@2.jpg" alt="Profile Photo">
-                </picture>
-            </div>
-            <div class="about-content">
-                <h1 class=" mb-xs">
-                    About
-                </h1>
-                <p class="mb-sm text-black mw ">
-                    My name is Ligaya, or you can call me Gaya.
-                    I'm currently based in southern Norway and I work as a UI/UX Designer at our web developer company. 
-                    I enjoy creating simple and usable user-interface designs.
-                </p>
-                
-                <p class="mb-sm text-black mw">
-                    I studied UI Design at Careerfoundry and completed the UI Immersion part of the program.
-                    I am currently continuing on the specialisation course for Front-end Development.
-                </p>
-                
-                <p class="mb-sm text-black mw">
-                    When I'm not designing, I do gardening, planting plants and flowers and building things. 
-                    I also like acrylic and alcohol ink painting, and digital and analog photography.
-                </p>
-            </div>
+    <div class="container">
+        <h1 class="mb-lg">
+            About
+        </h1>
+    </div>
+    <div class="container mb-lg md-mb-xl lg-flex parent">
+        <div class="about mb-lg lg-mb-0 lg-order-2 lg-w-50">
+            <picture class="prof-img">
+                <source srcset="img/prof@1.jpg" media="(max-width:767px)">
+                <img src="img/prof@2.jpg" alt="Profile Photo">
+            </picture>
         </div>
+
+        <div class="lg-order-1 lg-w-50">
+            <p class="mb-sm text-black mw ">
+                My name is Ligaya, or you can call me Gaya.
+                I'm currently based in southern Norway and I work as a UI/UX Designer at our web developer company. 
+                I enjoy creating simple and usable user-interface designs.
+            </p>
+            
+            <p class="mb-sm text-black mw">
+                I studied UI Design at Careerfoundry and completed the UI Immersion part of the program.
+                I am currently continuing on the specialisation course for Front-end Development.
+            </p>
+            
+            <p class="mb-sm lg-mb-0 text-black mw">
+                When I'm not designing, I do gardening, planting plants and flowers and building things. 
+                I also like acrylic and alcohol ink painting, and digital and analog photography.
+            </p>
+        </div>
+       
     </div>
     <!-- ABOUT ME END -->
             
     <!-- SKILLS START -->
-    <div class="container mb-lg">
-        <div class="about-content">
-            <h2 class="">
-                Skills
-            </h2>
-            <ul>
-                <li class="text-black set">UI Design</li>
-                <li class="text-black set">UX Design</li>
-                <li class="text-black set">Wireframing</li>
-                <li class="text-black set">User Personas</li>
-                <li class="text-black set">User Flows</li>
-                <li class="text-black set">Mockups</li>
-                <li class="text-black set">Prototyping</li>
-                <li class="text-black set">Mobile App Design</li>
-                <li class="text-black set">Responsive Web Design</li>
-                <li class="text-black set">Front-end Development</li>
-            </ul>
+    <div class="container md-flex lg-flex mb-lg md-mb-xl parent">
+        <div class="mb-lg md-mb-0 md-w-50">
+                <h2>
+                    Skills
+                </h2>
+                <ul>
+                    <li class="text-black mb-xs">UI Design</li>
+                    <li class="text-black mb-xs">UX Design</li>
+                    <li class="text-black mb-xs">Wireframing</li>
+                    <li class="text-black mb-xs">User Personas</li>
+                    <li class="text-black mb-xs">User Flows</li>
+                    <li class="text-black mb-xs">Mockups</li>
+                    <li class="text-black mb-xs">Prototyping</li>
+                    <li class="text-black mb-xs">Mobile App Design</li>
+                    <li class="text-black mb-xs">Responsive Web Design</li>
+                    <li class="text-black mb-xs">Front-end Development</li>
+                </ul>
         </div>
-    </div>
     <!-- SKILLS END -->
 
     <!-- TOOLS START -->
-    <div class="container mb-lg md-mb-xl ">
-        <div class="about-content">
-            <h2>
-                Tools
-            </h2>
-            <div>
+        <div class="md-w-50 ">
+                <h2>
+                    Tools
+                </h2>
                 <ul>
-                    <li class="text-black set">Adobe XD</li>
-                    <li class="text-black set">Adobe Photoshop</li>
-                    <li class="text-black set">Figma</li>
-                    <li class="text-black set">Miro</li>
+                    <li class="text-black mb-xs">Adobe XD</li>
+                    <li class="text-black mb-xs">Adobe Photoshop</li>
+                    <li class="text-black mb-xs">Figma</li>
+                    <li class="text-black mb-xs">Miro</li>
                 </ul>
-            </div>
         </div>
     </div>
     <!-- TOOLS END -->
@@ -108,7 +108,7 @@
     <footer>
         <div class="container" id="contact">
             <div class="footer-content">
-                <h1>
+                <h1 class="mb-xs">
                     Say hello
                 </h1>
                 <p class="contact-p">
@@ -141,6 +141,9 @@
         </div>
     </footer>
     <!-- FOOTER END --> 
-    
+    <script 
+            src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+        <script src="js/scripts.js"></script>
 </body>
 </html>
