@@ -27,11 +27,11 @@
         <nav class="nav-menu">
             <ul class="navlinks">
                 <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    
+        
         <div class="hamburger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -41,76 +41,75 @@
     <!-- TOP BAR END-->
     
     <!-- ABOUT ME START -->
-    <div class="container">
-        <h1 class="mb-lg">
-            About
-        </h1>
-    </div>
-    <div class="container mb-lg md-mb-xl lg-flex parent">
-        <div class="about mb-lg lg-mb-0 lg-order-2 lg-w-50">
-            <picture class="prof-img">
-                <source srcset="img/prof@1.jpg" media="(max-width:767px)">
-                <img src="img/prof@2.jpg" alt="Profile Photo">
-            </picture>
+    <div class="container mb-lg md-flex items-center parent">
+        <div class="about mb-lg md-mb-0 md-order-2 md-w-50">
+            <div class="img-container">
+                <div class="img-bg"></div>
+                <div>
+                    <picture class="prof-img">
+                        <source srcset="img/prof@1.jpg" media="(max-width:767px)">
+                        <img src="img/prof@2.jpg" alt="Profile Photo">
+                    </picture>
+                </div>
+            </div>
         </div>
-
-        <div class="lg-order-1 lg-w-50">
-            <p class="mb-sm text-black mw ">
-                My name is Ligaya, or you can call me Gaya.
-                I'm currently based in southern Norway and I work as a UI/UX Designer at our web developer company. 
-                I enjoy creating simple and usable user-interface designs.
+        
+        <div class="md-order-1 md-w-50">
+            <h1 class="h3">
+                Hello, it's me
+            </h1>
+            <h2 class="h1 mb-xs md-mb-sm">
+                Gaya.
+            </h2>
+            <p class="mb-sm text-black mw">
+                I'm a UI/UX Designer based in southern Norway. I take simple ideas and turn them into beautiful and usable designs. 
             </p>
             
             <p class="mb-sm text-black mw">
-                I studied UI Design at Careerfoundry and completed the UI Immersion part of the program.
-                I am currently continuing on the specialisation course for Front-end Development.
+                I primarily focus on making mobile apps and web designs.
             </p>
             
-            <p class="mb-sm lg-mb-0 text-black mw">
-                When I'm not designing, I do gardening, planting plants and flowers and building things. 
+            <p class="mb-sm md-mb-0 text-black mw">
+                When I'm not designing, I do gardening, planting plants and flowers. 
                 I also like acrylic and alcohol ink painting, and digital and analog photography.
             </p>
         </div>
-       
+        
     </div>
     <!-- ABOUT ME END -->
-            
+    
     <!-- SKILLS START -->
-    <div class="container md-flex lg-flex mb-lg md-mb-xl parent">
-        <div class="mb-lg md-mb-0 md-w-50">
-                <h2>
-                    Skills
-                </h2>
-                <ul>
-                    <li class="text-black mb-xs">UI Design</li>
-                    <li class="text-black mb-xs">UX Design</li>
-                    <li class="text-black mb-xs">Wireframing</li>
-                    <li class="text-black mb-xs">User Personas</li>
-                    <li class="text-black mb-xs">User Flows</li>
-                    <li class="text-black mb-xs">Mockups</li>
-                    <li class="text-black mb-xs">Prototyping</li>
-                    <li class="text-black mb-xs">Mobile App Design</li>
-                    <li class="text-black mb-xs">Responsive Web Design</li>
-                    <li class="text-black mb-xs">Front-end Development</li>
-                </ul>
-        </div>
-    <!-- SKILLS END -->
-
-    <!-- TOOLS START -->
-        <div class="md-w-50 ">
-                <h2>
-                    Tools
-                </h2>
-                <ul>
-                    <li class="text-black mb-xs">Adobe XD</li>
-                    <li class="text-black mb-xs">Adobe Photoshop</li>
-                    <li class="text-black mb-xs">Figma</li>
-                    <li class="text-black mb-xs">Miro</li>
-                </ul>
-        </div>
+    <div class="container mb-lg md-mb-xl parent">
+            <h2 class="mb-sm">
+                Skills & Tools
+            </h2>
+            <div class="md-flex">
+                <div class="md-w-33">
+                    <ul>
+                        <li class="text-black mb-xs">UI Design</li>
+                        <li class="text-black mb-xs">Wireframes</li>
+                        <li class="text-black mb-xs">Mobile & Web Design</li>
+                        <li class="text-black mb-xs">Prototype & Mockups</li>
+                    </ul>
+                </div>
+                <div class="md-w-33">
+                    <ul>
+                        <li class="text-black mb-xs">HTML/CSS</li>
+                        <li class="text-black mb-xs">Photography</li>
+                        <li class="text-black mb-xs">Responsive Design</li>
+                        <li class="text-black mb-xs">Front-end Development</li>
+                    </ul>
+                </div>
+                <div class="md-w-33">
+                    <ul>
+                        <li class="text-black mb-xs">Figma</li>
+                        <li class="text-black mb-xs">Adobe XD</li>
+                        <li class="text-black mb-xs">Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        <!-- SKILLS END -->
     </div>
-    <!-- TOOLS END -->
-
     <!-- FOOTER START --> 
     <footer>
         <div class="container" id="contact">
@@ -131,11 +130,11 @@
                                         <path d="M22.721,30.425h-5.982v5.492h5.296c0.09,0,0.225,0.002,0.383,0c0.852-0.02,2.467-0.268,2.467-2.67   C24.885,30.396,22.721,30.425,22.721,30.425z"/>
                                         <path d="M28.348,5.101c-13.6,0-24.625,11.023-24.625,24.623c0,13.6,11.025,24.625,24.625,24.625   c13.598,0,24.623-11.025,24.623-24.625C52.971,16.125,41.945,5.101,28.348,5.101z M33.531,20.231h8.477v2.53h-8.477V20.231z    M29.246,33.503c0,6.271-6.525,6.064-6.525,6.064h-5.982h-0.175h-4.535V19.021h4.535h0.175h5.982c3.248,0,5.812,1.794,5.812,5.47   c0,3.676-3.135,3.91-3.135,3.91C29.531,28.401,29.246,33.503,29.246,33.503z M45.104,33.167H34.457   c0,3.816,3.615,3.576,3.615,3.576c3.414,0,3.295-2.211,3.295-2.211h3.617c0,5.867-7.033,5.465-7.033,5.465   c-8.436,0-7.893-7.855-7.893-7.855s-0.008-7.893,7.893-7.893C46.268,24.249,45.104,33.167,45.104,33.167z"/>
                                         <path d="M24.174,24.81c0-2.137-1.453-2.137-1.453-2.137h-0.77h-5.212v4.584h5.611C23.318,27.257,24.174,26.946,24.174,24.81z"/>
-                                        </g>
+                                    </g>
                                 </svg>
                             </a>
                         </li>
-                    
+                        
                         <li>
                             <a href="https://www.linkedin.com/in/ligaya-l-478322248/" target="_blank">
                                 <svg height="56.693px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -144,13 +143,13 @@
                             </a>
                         </li>
                     </ul>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!-- FOOTER END --> 
-    <script 
-            src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
-        </script>
-        <script src="js/scripts.js"></script>
+        </footer>
+        <!-- FOOTER END --> 
+        <script 
+        src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
