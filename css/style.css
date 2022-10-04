@@ -666,10 +666,14 @@ a.active {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
+  .gap {
+    gap: 2rem;
+  }
   .parent {
     gap: 2rem;
-      padding-top: 4rem;
+    padding-top: 4rem;
   }
+
 }
 
 .wide-img img {
@@ -786,6 +790,9 @@ a.active {
   }
   .about {
     width: 40%;
+  }
+  .gap {
+    gap: 3rem;
   }
   .parent {
     gap: 3rem;
