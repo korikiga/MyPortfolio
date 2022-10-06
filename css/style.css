@@ -51,7 +51,7 @@ img {
 }
 
 a {
-  color: #71717a;
+  color: #767676;
   text-decoration: none;
 }
 
@@ -183,14 +183,13 @@ a.active {
 .button {
   display: inline-block;
   color: #18181b;
-  font-weight: 400;
   transition: 0.2s ease;
   font-weight: 600;
   font-size: 14px;
 }
 
 .button:hover {
-  color: #a7a7a7;
+  color: #767676;
 }
 
 .container {
